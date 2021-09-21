@@ -62,7 +62,7 @@ const nextBtn = document.querySelector(".next-btn");
 const impressBtn = document.querySelector(".impress-btn");
 
 // set starting item
-let currentItem = 0;
+let currentItem = getRandomNumber();
 
 // load initial item
 window.addEventListener("DOMContentLoaded", function () {

@@ -1,0 +1,47 @@
+.single-drink {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+
+  .drink-img-container {
+    max-height: 20rem;
+    margin-bottom: 2rem;
+
+    img {
+      max-height: 20rem;
+    }
+  }
+
+  .drink-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    p {
+      max-width: 25rem;
+    }
+  }
+}
+
+@include media-mobile {
+  .single-drink {
+    flex-direction: row;
+
+    .drink-img-container {
+      max-height: 25rem;
+      margin-bottom: 0rem;
+
+      img {
+        max-height: 25rem;
+      }
+    }
+
+    article {
+      display: flex;
+      justify-content: center;
+      flex: 0 0 50%;
+    }
+  }
+}
